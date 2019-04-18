@@ -20,6 +20,12 @@ nav a {
   background-color: black;
 }
 
+.carousel {
+  width: 100%;
+}
+
+
+
 #accessibility-link {
   color: black;
   position: relative;
@@ -89,14 +95,14 @@ h1 {
   font-size: 35px;
 }
 
-.container {
+.histcontainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 40px;
   justify-items: center;
 }
 
-.container li{
+.histcontainer li{
   list-style: none;
 }
 
@@ -226,20 +232,20 @@ h2 {
   .indexcontainer {
     grid-template-columns: 1fr 1fr;
   }
-  .container {
+  .histcontainer {
     grid-template-columns: 1fr 1fr;
     justify-items: left;
 
   }
-  .container > div > ul > li {
+  .histcontainer > div > ul > li {
     text-align: left;
   }
 
-  .container li{
+  .histcontainer li{
     list-style: circle;
   }
 
-  .container > div > h2 {
+  .histcontainer > div > h2 {
     text-align: left;
   }
 

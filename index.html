@@ -10,6 +10,18 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-138575042-1');
+
+      var i = 0;
+      var txt = 'Club Golf at the University of Michigan';
+      var speed = 50;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("info").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
@@ -19,7 +31,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Club Golf at the University of Michigan</title>
   </head>
-  <body class="background">
+  <body class="background" onload="typeWriter()">
     <a href= "#main" class="skip"> Skip to Content</a>
     <div class="imagearea">
       <nav class="topnav" id="myTopnav">
@@ -33,7 +45,7 @@
     <div>
 </nav>
 <header>
-<h1 id="info">Club Golf at the University of Michigan</h1>
+<h1 id="info"></h1>
 </header>
 </div>
 
@@ -101,6 +113,7 @@
     }
     var info = document.getElementById("info")
     info.style.display = 'none';
+
   }
   </script>
 </body>
