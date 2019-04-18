@@ -303,7 +303,6 @@ h2 {
 /* Print QR code */
 @media print {
        body:after{
-            content:url(http://chart.googleapis.com/chart?
-                  cht=qr&chs=200x200&choe=UTF-8&chld=H&chl=https://carolgil.github.io/michiganclubgolf/)
+            content: url(https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=https://carolgil.github.io/michiganclubgolf/&choe=UTF-8);
             }
 }
