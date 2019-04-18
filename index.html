@@ -16,22 +16,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Club Golf at the University of Michigan</title>
   </head>
   <body class="background">
     <a href= "#main" class="skip"> Skip to Content</a>
     <div class="imagearea">
-  <nav class="indexnav">
-    <ul>
-<li><a href="index.html" class ="current">Home</a></li>
-<li> <a href= "roster.html">Roster</a></li>
-<li> <a href= "schedule.html">Schedule</a></li>
-<li> <a href= "history.html">History</a></li>
-<li> <a href= "contact.html">Contact</a></li>
-</ul>
+      <nav class="topnav" id="myTopnav">
+        <div class="indexnav">
+    <a href="index.html" class ="current">Home</a>
+    <a href= "roster.html">Roster</a>
+    <a href= "schedule.html">Schedule</a>
+    <a href= "history.html">History</a>
+    <a href= "contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <div>
 </nav>
 <header>
-<h1>Club Golf at the University of Michigan</h1>
+<h1 id="info">Club Golf at the University of Michigan</h1>
 </header>
 </div>
 
@@ -39,7 +41,7 @@
 
   <div class="indexcontainer">
   <div>
-<h2>Team Information</h2>
+<h2 id="info">Team Information</h2>
 
 <p> The Club Golf Team at the University of Michigan is a member of the National Collegiate Club Golf Association (NCCGA) that comprises over 350 college teams. The NCCGA is split into 5 zones which are then split into regions. The University of Michigan plays in the Midwest Region of Zone 2. The team has won the Midwest Region 10 times since its creation and finished in the Top 5 in the nation 4 times. In Fall 2013, the team won both Midwest Regionals to advance to the National Tournament in Myrtle Beach, where they won the National Championship. If you would like additional information about the NCCGA, find out more on their  <a href="https://nextgengolf.org/college-golf/nccga/."> website. </a> </p>
 <br>
@@ -89,6 +91,17 @@
 <a href="mailto:michiganclubgolf@gmail.com" target="_blank"><i class="fas fa-envelope-square" title="email"></i></a>
 
   </footer>
-
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+    var info = document.getElementById("info")
+    info.style.display = 'none';
+  }
+  </script>
 </body>
 </html>

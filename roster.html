@@ -14,19 +14,19 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Roster</title>
   </head>
   <body>
     <a href= "#main" class="skip"> Skip to Content</a>
-  <nav>
-    <ul>
-<li><a href="index.html"><img src = "images/logo.jpg" class="navimg" alt = "Home" /></a></li>
-<li> <a href= "roster.html" class ="current">Roster</a></li>
-<li> <a href= "schedule.html">Schedule</a></li>
-<li> <a href= "history.html">History</a></li>
-<li> <a href= "contact.html">Contact</a></li>
-</ul>
-</nav>
+    <nav class="topnav" id="myTopnav">
+  <a href="index.html"><img src = "images/logo.jpg" class="navimg" alt = "Home" /></a>
+  <a href= "roster.html" class ="current">Roster</a>
+  <a href= "schedule.html">Schedule</a>
+  <a href= "history.html">History</a>
+  <a href= "contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </nav>
 <header>
 
 <h1> 2018 Roster</h1>
@@ -231,5 +231,15 @@
 <footer>
   &copy; 2019 by Caroline Gilhool<br>
 </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
