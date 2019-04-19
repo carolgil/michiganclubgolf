@@ -27,9 +27,10 @@ nav a {
 
 
 #accessibility-link {
-  color: black;
+  color: white;
   position: relative;
   left: -2000px;
+  background-color: #9a9a9a;
 }
 
 #accessibility-link:focus {
@@ -66,6 +67,8 @@ nav {
 .skip {
   position: relative;
   left: -2000px;
+  background-color: #575757;
+  color: #ffffff;
 }
 
 .skip:focus {
