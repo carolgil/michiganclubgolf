@@ -265,11 +265,11 @@ h2 {
 
 /* ipad */
 @media screen and (min-width : 700px) and (max-width : 1245px) {
-  .box {
+  /* .box {
     min-height: 100vh;
     position: relative;
     padding-bottom: 40px;
-  }
+  } */
   .contact_container {
     grid-template-columns: 1fr 1fr;
   }
