@@ -22,6 +22,18 @@
           setTimeout(typeWriter, speed);
         }
       }
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+        var info = document.getElementById("info")
+        info.style.display = 'none';
+
+        }
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
@@ -105,18 +117,5 @@
 <a href="mailto:michiganclubgolf@gmail.com" target="_blank"><i class="fas fa-envelope-square" title="email"></i></a>
 
   </footer>
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-    var info = document.getElementById("info")
-    info.style.display = 'none';
-
-  }
-  </script>
 </body>
 </html>
